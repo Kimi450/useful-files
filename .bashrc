@@ -5,6 +5,10 @@
 
 cd ~
 
+export SSH_OPTS="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+
+export ssh="ssh ${SSH_OPTS}"
+
 alias python=python3
 alias pip=pip3
 
