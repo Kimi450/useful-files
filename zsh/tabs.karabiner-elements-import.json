@@ -1,0 +1,57 @@
+{
+    "description": "Swap \"command + tab\" with \"control + tab\" for easier use inside applications. For example: switching between tabs in your browser, which now matches the other tab related shortcuts.",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "tab",
+                "modifiers": { "mandatory": ["command"] }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": ["control"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "tab",
+                "modifiers": { "mandatory": ["control"] }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": ["command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "tab",
+                "modifiers": { "mandatory": ["command", "shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": ["control", "shift"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "tab",
+                "modifiers": { "mandatory": ["control", "shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": ["command", "shift"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}

@@ -1,0 +1,213 @@
+{
+    "description": "Work manipulation with cntrl instead of option",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": { "mandatory": ["option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["command", "left_shift"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": { "mandatory": ["option", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["command", "left_shift"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": { "mandatory": ["command", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["option", "left_shift"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": { "mandatory": ["command", "left_shift"] }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["option", "left_shift"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "delete_or_backspace",
+                "modifiers": { "mandatory": ["option"] }
+            },
+            "to": [
+                {
+                    "key_code": "delete_or_backspace",
+                    "modifiers": ["command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "delete_forward",
+                "modifiers": { "mandatory": ["option"] }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward",
+                    "modifiers": ["command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "delete_or_backspace",
+                "modifiers": { "mandatory": ["command"] }
+            },
+            "to": [
+                {
+                    "key_code": "delete_or_backspace",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "delete_forward",
+                "modifiers": { "mandatory": ["command"] }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": { "mandatory": ["option"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": { "mandatory": ["option"] }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "up_arrow",
+                "modifiers": { "mandatory": ["option"] }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": ["command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "down_arrow",
+                "modifiers": { "mandatory": ["option"] }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": ["command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": { "mandatory": ["command"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": { "mandatory": ["command"] }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "up_arrow",
+                "modifiers": { "mandatory": ["command"] }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "down_arrow",
+                "modifiers": { "mandatory": ["command"] }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
