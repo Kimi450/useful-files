@@ -4,12 +4,12 @@
         {
             "from": {
                 "key_code": "tab",
-                "modifiers": { "mandatory": ["command"] }
+                "modifiers": { "mandatory": ["left_command"] }
             },
             "to": [
                 {
                     "key_code": "tab",
-                    "modifiers": ["control"]
+                    "modifiers": ["left_control"]
                 }
             ],
             "type": "basic"
@@ -17,12 +17,12 @@
         {
             "from": {
                 "key_code": "tab",
-                "modifiers": { "mandatory": ["control"] }
+                "modifiers": { "mandatory": ["left_control"] }
             },
             "to": [
                 {
                     "key_code": "tab",
-                    "modifiers": ["command"]
+                    "modifiers": ["left_command"]
                 }
             ],
             "type": "basic"
@@ -30,12 +30,12 @@
         {
             "from": {
                 "key_code": "tab",
-                "modifiers": { "mandatory": ["command", "shift"] }
+                "modifiers": { "mandatory": ["left_command", "left_shift"] }
             },
             "to": [
                 {
                     "key_code": "tab",
-                    "modifiers": ["control", "shift"]
+                    "modifiers": ["left_control", "left_shift"]
                 }
             ],
             "type": "basic"
@@ -43,12 +43,12 @@
         {
             "from": {
                 "key_code": "tab",
-                "modifiers": { "mandatory": ["control", "shift"] }
+                "modifiers": { "mandatory": ["left_control", "left_shift"] }
             },
             "to": [
                 {
                     "key_code": "tab",
-                    "modifiers": ["command", "shift"]
+                    "modifiers": ["left_command", "left_shift"]
                 }
             ],
             "type": "basic"
