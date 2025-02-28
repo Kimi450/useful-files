@@ -122,13 +122,10 @@ backup() {
 }
 
 ggb() {
-    set -x
     git checkout topic/$USER/${1}
     if [ $? -ne 0 ]; then
         git checkout -b topic/${USER}/${1}
     fi
-    set +x
-
 }
 
 ggg() {
