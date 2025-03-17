@@ -17,8 +17,6 @@ alias gbr="git branch | egrep -v "master" | xargs git branch -D"
 alias ee="explorer.exe ."
 alias k=kubectl
 
-export K8S_NAMESPACE=kimi450
-
 # Eternal bash history.
 # ---------------------
 

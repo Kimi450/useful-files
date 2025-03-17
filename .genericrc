@@ -6,7 +6,7 @@ alias ee="open ./"
 alias k=kubectl
 
 export K8S_NAMESPACE=${USER}
-export KUBECONFIG="/home/${USER}/.kube/config"
+export KUBECONFIG="${HOME}/.kube/config"
 
 # for kubectl neat
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH" 
