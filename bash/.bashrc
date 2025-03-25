@@ -5,6 +5,8 @@
 
 cd ~
 
+export K8S_PS1=false
+
 export SSH_OPTS="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 
 export ssh="ssh ${SSH_OPTS}"
@@ -91,8 +93,12 @@ __prompt_command() {
   elif [ ${#EXIT} -eq 2 ]; then
    dashes="-"
   fi
-  PS1="${Gre}`hostname` ${BYel}\t ${RCol}"
-  # PS1="${Gre}[$(cat /sys/class/power_supply/BAT0/capacity)%] $(k_cc):$(k_cn) ${BYel}\t ${RCol}"
+  k8s_info=""
+  if ${K8S_PS1} && kubectl version >/dev/null 2>&1 ; then
+      k8s_info=" ${RCol}[${Gre}$(k_cc)${RCol}:${Gre}$(k_cn)${RCol}]"
+  fi
+  PS1="${BYel}\t ${Gre}`hostname`${k8s_info} ${RCol}"
+  # PS1="${Gre}[$(cat /sys/class/power_supply/BAT0/capacity)%]${k8s_info}${BYel}\t ${RCol}"
   # PS1="${Gre}$(k_cc):$(k_cn) ${BYel}\t ${RCol}"
  if [ $EXIT != 0 ]; then
  PS1+="[${Red}${dashes}${EXIT}${RCol}]" # Add red if exit code non 0
