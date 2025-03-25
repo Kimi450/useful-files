@@ -91,9 +91,9 @@ __prompt_command() {
   elif [ ${#EXIT} -eq 2 ]; then
    dashes="-"
   fi
-  PS1="${Gre}${BYel}\t ${RCol}"
-#   PS1="${Gre}[$(cat /sys/class/power_supply/BAT0/capacity)%] $(k_cc):$(k_cn) ${BYel}\t ${RCol}"
- # PS1="${Gre}$(k_cc):$(k_cn) ${BYel}\t ${RCol}"
+  PS1="${Gre}`hostname` ${BYel}\t ${RCol}"
+  # PS1="${Gre}[$(cat /sys/class/power_supply/BAT0/capacity)%] $(k_cc):$(k_cn) ${BYel}\t ${RCol}"
+  # PS1="${Gre}$(k_cc):$(k_cn) ${BYel}\t ${RCol}"
  if [ $EXIT != 0 ]; then
  PS1+="[${Red}${dashes}${EXIT}${RCol}]" # Add red if exit code non 0
  else
