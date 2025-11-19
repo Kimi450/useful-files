@@ -14,6 +14,8 @@ This is specific to zsh and probably Macbooks
 - [fzf](https://formulae.brew.sh/formula/fzf) for better history
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/)
     - Config import provided
+- [Clipy](https://clipy-app.com/)
+    - For clipboard usecases
 
 ### Optional extras
 - [ASCII table](https://www.physics.udel.edu/~watson/scen103/ascii.html)
